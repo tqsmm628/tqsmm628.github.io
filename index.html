@@ -1,12 +1,18 @@
 <html>
 <body>
     <div style="text-align: center">
-        <object data="resources/itext-test.pdf" type="application/pdf" style="width: 50%; height: 60%">
-            <embed src="resources/itext-test.pdf" type="application/pdf" />
-        </object>
-        <iframe src="resources/itext-test.pdf" frameborder="0" style="width: 50%; height: 60%">
-            <p>sorry, your browser doesn't support application/pdf</p>
-        </iframe>
+        <label style="display: inline-block; width: 50%; float: left;">
+            <h1>&lt;object&gt;</h1>
+            <object data="resources/itext-test.pdf" type="application/pdf" style="width: 100%; height: 80%">
+                <embed src="resources/itext-test.pdf" type="application/pdf" />
+            </object>
+        </label>
+        <label style="display: inline-block; width: 50%; float: left;">
+            <h1><h1>&lt;iframe&gt;</h1></h1>
+            <iframe src="resources/itext-test.pdf" frameborder="0" style="width: 100%; height: 80%">
+                <p>sorry, your browser doesn't support application/pdf</p>
+            </iframe>
+        </label>
     </div>
 </body>
 </html>
